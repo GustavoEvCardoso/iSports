@@ -10,16 +10,13 @@ public class ConnectionFactory {
     private static String senha = "";
     private static String host = "";
     private static String porta = "";
-    private static String bd = "SPT_ESPORTES";
+    private static String bd = "";
 
     
     
     public static Connection obtemConexao() throws Exception {
         try {
-            Connection c = DriverManager.getConnection(
-                "jdbc:mysql://" + host + ":" + porta + "/" + bd + "?useTimezone=true&serverTimezone=UTC",
-                usuario,
-                senha
+          //código de conexao
             );
             return c;
         } catch (Exception e) {
